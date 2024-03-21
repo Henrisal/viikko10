@@ -1,4 +1,4 @@
-package com.example.viikko9;
+package com.example.viikko10;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class UserViewHolder extends RecyclerView.ViewHolder {
     ImageView imageView;
-    TextView textFirstName, textLastName, textEmail, textDegreeProgram;
+    TextView textFirstName, textLastName, textEmail, textDegreeProgram, textUserDegrees;
     public UserViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.imageView);
@@ -17,5 +17,6 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         textLastName = itemView.findViewById(R.id.textLastName);
         textEmail = itemView.findViewById(R.id.textEmail);
         textDegreeProgram = itemView.findViewById(R.id.textDegreeProgram);
+        textUserDegrees = itemView.findViewById(R.id.textUserDegrees);
     }
 }

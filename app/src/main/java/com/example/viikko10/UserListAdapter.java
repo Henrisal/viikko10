@@ -1,6 +1,7 @@
-package com.example.viikko9;
+package com.example.viikko10;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -32,6 +33,9 @@ public class UserListAdapter extends RecyclerView.Adapter<UserViewHolder> {
         holder.textLastName.setText(users.get(position).getLastName());
         holder.textEmail.setText(users.get(position).getEmail());
         holder.textDegreeProgram.setText(users.get(position).getDegreeProgram());
+        ArrayList<String> userDegrees = users.get(position).getDegrees();
+        String degreesString = TextUtils.join(", ", userDegrees);
+        holder.textUserDegrees.setText(degreesString);
     }
 
     @Override

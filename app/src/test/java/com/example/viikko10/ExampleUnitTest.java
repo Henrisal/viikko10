@@ -1,4 +1,4 @@
-package com.example.viikko9;
+package com.example.viikko10;
 
 import org.junit.Test;
 

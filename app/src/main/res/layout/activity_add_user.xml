@@ -47,8 +47,8 @@
         android:id="@+id/radioDegreeProgram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         app:layout_constraintBottom_toTopOf="@+id/addUserButton"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editEmail">
 
@@ -87,4 +87,44 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/phdCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ph. D."
+        app:layout_constraintStart_toEndOf="@+id/radioDegreeProgram"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <CheckBox
+        android:id="@+id/lciCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Lic."
+        app:layout_constraintStart_toEndOf="@+id/radioDegreeProgram"
+        app:layout_constraintTop_toBottomOf="@+id/phdCheckBox" />
+
+    <CheckBox
+        android:id="@+id/msCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="M.Sc."
+        app:layout_constraintStart_toEndOf="@+id/radioDegreeProgram"
+        app:layout_constraintTop_toBottomOf="@+id/lciCheckBox" />
+
+    <CheckBox
+        android:id="@+id/bcCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="B.Sc."
+        app:layout_constraintStart_toEndOf="@+id/radioDegreeProgram"
+        app:layout_constraintTop_toBottomOf="@+id/msCheckBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>
