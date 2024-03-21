@@ -29,6 +29,10 @@ public class AddUserActivity extends AppCompatActivity {
         EditText firstNameEditText = findViewById(R.id.editFirstName);
         EditText lastNameEditText = findViewById(R.id.editLastName);
         EditText emailEditText = findViewById(R.id.editEmail);
+        CheckBox phdCheckBox = findViewById(R.id.phdCheckBox);
+        CheckBox lciCheckBox = findViewById(R.id.lciCheckBox);
+        CheckBox msCheckBox = findViewById(R.id.msCheckBox);
+        CheckBox bcCheckBox = findViewById(R.id.bcCheckBox);
 
         String firstName = firstNameEditText.getText().toString();
         String lastName = lastNameEditText.getText().toString();
@@ -52,11 +56,6 @@ public class AddUserActivity extends AppCompatActivity {
         else if (checkedId == R.id.eeRadioButton) {
                 degreeProgram = "Electrical Engineering";
         }
-
-        CheckBox phdCheckBox = findViewById(R.id.phdCheckBox);
-        CheckBox lciCheckBox = findViewById(R.id.lciCheckBox);
-        CheckBox msCheckBox = findViewById(R.id.msCheckBox);
-        CheckBox bcCheckBox = findViewById(R.id.bcCheckBox);
 
 
         ArrayList<String> degrees = new ArrayList<>();
